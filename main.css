@@ -1,0 +1,394 @@
+/* 
+  TODO: 
+    1. Apply common css, and remove repeted properties related to font-family, font-size.
+    2. Responsiveness
+    3. Use less
+*/
+
+
+.gsr-logo {
+ /*  margin-left: 68px; */
+  padding-top: 20px;
+  float: left;
+}
+.main-search {
+  float: right;
+  height: 48px;
+  width: 436px;
+  margin: 20px 0 20px 20px;
+}
+.official-list-section {
+  /* padding-left:68px; */
+  margin-top: 122px;
+}
+.gas-emergency-strip {
+  height: 50px;
+  background-color: #FFF200;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.gas-emergency-strip-content {
+  height: 33px;
+  display: flex;
+}
+.gas-emergency-strip-text {
+  padding-top: 7px;
+  padding-left: 11.71px
+}
+.the-official-list-of h1{
+	color: #FFFFFF;
+	font-family: "Gothic A1";
+	font-size: 54px;
+	font-weight: 900;
+	line-height: 60px;
+}   
+
+.by-law-all-gas-engin-copy {
+	height: 56px;
+	width: 444px;
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 18px;
+	line-height: 28px;
+}
+.top-container {
+	height: 824px;
+	background: linear-gradient(270deg, rgba(0,0,0,0) 0%, #000000 100%);
+}
+.top-menu {
+	height: 150px;
+	background-color: #03180D;
+}
+.trust-the-triangle {
+	height: 32px;
+	color: #FFFFFF;
+	font-family: "Gothic A1";
+	font-size: 18px;
+	font-weight: bold;
+  line-height: 32px;
+  margin-top: 44px;
+}
+.top-content {
+  background: url('./images/Homepage\ 1900px\ Desktop\ -\ Hero.png') no-repeat 100% 100%;
+  height: 624px;
+}
+.flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.find-check-background {
+	border-radius: 5px;
+  background-color: #EDEDE7;
+  padding: 32px 48px;
+  margin-top:34px;
+}
+.find-and-check {
+	height: 40px;
+	color: #03180D;
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 40px;
+}
+.find-an-engineer-by {
+	color: #03180D;
+	font-family: "Open Sans";
+	font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.find-an-engineer-by-new {
+	height: 80px;
+	width: 599px;
+	color: #03180D;
+	font-family: "Open Sans";
+	font-size: 18px;
+  line-height: 28px;
+  padding-top: 16px;
+}
+.check-an-engineer-or {
+  height: 80px;
+  color: #03180D;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 16px;
+}
+.search-bar-copy {
+	height: 49px;
+ box-sizing: border-box;
+ border-radius: 3px;
+ margin-bottom: 16px;
+ font-weight: bold;
+}
+
+.search-bar-copy-find-check {
+	height: 49px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  margin-top: 25px
+}
+.search-button {
+  width: 100px;
+  background-color: yellow;
+  border: 1px solid #03180D;
+
+}
+.input-text {
+  width: calc(100% - 100px);
+  padding: 12.5px 16px;
+  border: 1px solid #03180D;
+}
+.domestic-label {
+  margin-right: 10px;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+.find-check {
+	border: 1px solid #000;
+	width: 266px;
+	border-radius: 30px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background: black;
+	color: white;
+}
+.find-check input {
+	display: none;
+}
+.find-check label {
+	height: 100%;
+	border-radius: 30px;
+	width: 133px;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+}
+.find-check input:checked+label{
+	background: white;
+	color: black;
+	width: 133px;
+	margin-bottom:0;
+	margin-left: -2px;
+}
+.find-check .check-radio{
+	margin-right:-2px;
+	margin-left:0;
+	height: 49px;
+}
+.search-icon {
+  margin: 1px;
+}
+
+.element::-webkit-input-placeholder {
+  font-weight: bold;
+}
+/* 1109-824px */
+.building-regaulation-certificates-container {
+  height: 170px;
+}
+.h-5-how-to-find-the-righ-building {
+	height: 40px;
+	color: #03180D;
+	font-family: "Gothic A1";
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 40px;
+	text-align: center;
+}
+.gas-safety-home {
+  padding-top:8px;
+  margin-bottom: 17px;
+}
+.h-5-how-to-find-the-righ {
+	height: 40px;
+	color: #03180D;
+	font-family: "Gothic A1";
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 40px;
+	text-align: center;
+}
+.finding-the-right-pe {
+  color: #54544E;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 46px;
+}
+.moving-home-you-ll {
+	height: 56px;
+	color: #03180D;
+	font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+	line-height: 28px;
+	text-align: center;
+}
+.cta-keyline-default-cta-standa {
+	height: 67px;
+  text-align: center;
+}
+.cta-text {
+  height: 40.5px;
+  width: 154.3px;
+  color: #03180D;
+  font-family: "Gothic A1";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  border: 1.5px solid black
+}
+.cta-text-visit {
+  height: 40.5px;
+  width: 212.3px;
+  color: #03180D;
+  font-family: "Gothic A1";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  border: 1.5px solid black
+}
+
+.cta-text-help-and-support {
+	height: 22.5px;
+	width: 201.3px;
+	color: #03180D;
+	font-family: "Gothic A1";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 23px;
+	text-align: center;
+}
+.help-and-support-container {
+  background-color: #EDEDE7;
+}
+.help-and-support {
+  color: #03180D;
+	font-family: "Gothic A1";
+	font-size: 48px;
+	font-weight: 900;
+  line-height: 56px;
+  text-align: center;
+  padding-top: 53px;
+}
+.how-to-find-right-engineer-container {
+  height: 284px;
+  text-align: center;
+}
+.help-and-support-sections{
+  padding-top:64px;
+}
+.cta-keyline-default {
+	box-sizing: border-box;
+	height: 48px;
+	width: 216px;
+	border: 1px solid #03180D;
+	border-radius: 3px;
+}
+.you-can-make-a-compl {
+	height: 103px;
+	width: 433px;
+	color: #03180D;
+	font-family: "Open Sans";
+	font-size: 18px;
+	line-height: 28px;
+}
+.complaints {
+	height: 40px;
+	width: 433px;
+	color: #03180D;
+	font-family: "Gothic A1";
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 40px;
+}
+.complaint-row {
+  padding-top:69px;
+}
+.cta-make-a-complaint-cta-stand {
+	height: 48px;
+  width: 181px;
+  margin-top: 14px
+}
+.content-image {
+  background: url('./images/shutterstock_218196451\ copy\ 2@2x\ \(2\).png') no-repeat 100% 100%;
+  height: 570px;
+}
+.need-to-talk-block {
+	height: 227px;
+	width: 475px;
+}
+.need-to-talk-to-some {
+	height: 40px;
+	width: 475px;
+	color: #03180D;
+	font-family: "Gothic A1";
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 40px;
+}
+.find-help-and-advice {
+	height: 84px;
+	width: 370px;
+	color: #03180D;
+	font-family: "Open Sans";
+	font-size: 18px;
+	line-height: 28px;
+}
+.shape {
+	height: 32px;
+	width: 32px;
+	background-color: #FFF200;
+}
+.new-icons-chevron-circle-down- {
+	height: 32px;
+	width: 32px;
+}
+.more-button{
+  text-align: center;
+  padding-top: 21px;
+}
+.more {
+	height: 18px;
+	width: 44px;
+	color: #FFFFFF;
+	font-family: "Gothic A1";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 23px;
+	text-align: center;
+}
+
+.header-bg{
+	background-color:#03180D;
+}
+
+.banner-hero{
+	background: url(./images/Homepage\ 1900px\ Desktop\ -\ Hero@3x.png) no-repeat 100% 100%;
+  height: 624px;
+  background-position: bottom center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .banner-hero {
+    height: 955px;
+  }
+}
+/* Responsiveness start */
+@media (min-width: 1200px) {
+  .banner-hero {
+    height: 624px;
+  }
+}
