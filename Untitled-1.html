@@ -16,9 +16,14 @@
     $(document).ready(function () {
       $("input[name='one']").click(function (e) {
         $(".toggle-text").toggle();
+        if($(".find-option-content").css("visibility") === 'visible') {
+          $(".find-option-content").css("visibility", "hidden");
+        } else {
+          $(".find-option-content").css("visibility", "visible");
+        }
       })
     })
-    </script>
+  </script>
   <div class="container-fluid header-bg">
     <div class="container">
       <div class="top-menu">
@@ -54,95 +59,46 @@
           safely and legally on gas appliances.</h6>
         <h5 class="trust-the-triangle">Trust the triangle</h5>
       </div>
-      <div class="col-md-6">
-        <div class="find-check-background">
+      <div class="col-md-6 find-check-background">
+        <!-- <div class="find-check-background"> -->
           <h2 class="find-and-check">Find and check</h2>
-          <div class="find-check">
+          <div class="find-check row">
             <input type="radio" name="one" id="radio1" checked />
-            <label for="radio1"><span class="glyphicon glyphicon-search search-icon"></span>Find</label>
+            <label for="radio1" class="check-radio" ><span class="glyphicon glyphicon-search search-icon"></span><span class="find">Find</span></label>
 
             <input type="radio" name="one" id="radio2" />
             <label for="radio2" class="check-radio"><span
-                class="glyphicon glyphicon-search search-icon"></span>Check</label>
+                class="glyphicon glyphicon-search search-icon"></span><span class="find">Check</span></label>
           </div>
-          <div>
-            <p class="toggle-text find-an-engineer-by-new">Find an engineer by searching your town/city or your postcode.</p>
-            <p class="toggle-text check-an-engineer-or" style="display: none;">Check an engineer or business registered status by searching the business
+          <div class="row">
+            <p class="toggle-text find-an-engineer-by-new">Find an engineer by searching your town/city or your
+              postcode.</p>
+            <p class="toggle-text check-an-engineer-or" style="display: none;">Check an engineer or business registered
+              status by searching the business
               name, registration number, business phone number, engineer name or ID number.</p>
           </div>
-          <div class="search-bar-copy-find-check flex">
+          <div class="search-bar-copy-find-check flex row">
             <input class="input-text" type="text" id="" placeholder="Enter search term" />
             <button class="search-button">Search <span class="glyphicon glyphicon-search search-icon"></span></button>
           </div>
-          <div class="search-choice toggle-text find-option-content">
+          <div class="find-option-content row">
             <input type="radio" name="search-choice-option" id="domestic" value="Domestic" /><label
               class="domestic-label" for="domestic">Domestic</label>
             <input type="radio" name="search-choice-option" id="commercial" value="Commercial" /><label
               for="commercial">Commercial</label>
           </div>
         </div>
-      </div>
-
-
+     <!--  </div> -->
     </div>
+
     <div class="container">
-        <div class="more-button">
-          <img class="" src="./images/chevron-circle-down-regular.png" alt="" />&nbsp;&nbsp;
-          <span class="more">More</span>
-        </div>
+      <div class="more-button">
+        <img class="" src="./images/chevron-circle-down-regular.png" alt="" />&nbsp;&nbsp;
+        <span class="more">More</span>
+      </div>
     </div>
   </div>
 
-
-  <!--  *****************************************************************************************************  -->
-  <!--  <div class="container-fluid header-bg">
-    
-   
-    <div class=" top-content flex">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 official-list-section">
-            <div class="the-official-list-of">
-              <h1>The official list of gas businesses</h1>
-            </div>
-            <h6 class="by-law-all-gas-engin-copy">By law all gas engineers must be on the Gas Safe Register to work
-              safely and legally on gas appliances.</h6>
-            <h5 class="trust-the-triangle">Trust the triangle</h5>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="find-check-background">
-              <h2 class="find-and-check">Find and check</h2>
-              <div class="find-check">
-                <input type="radio" name="one" id="radio1" checked />
-                <label for="radio1"><span class="glyphicon glyphicon-search search-icon"></span>Find</label>
-
-                <input type="radio" name="one" id="radio2" />
-                <label for="radio2" class="check-radio"><span class="glyphicon glyphicon-search search-icon"></span>Check</label>
-              </div>
-              <div class="find-an-engineer-by ">
-                <p>Find an engineer by searching your town/city or your postcode.</p>
-                <p class="find-option-content">Check an engineer or business registered status by searching the business
-                  name, registration number, business phone number, engineer name or ID number.</p>
-              </div>
-              <div class="search-bar-copy flex">
-                <input class="input-text" type="text" id="" placeholder="Enter search term" />
-                <button class="search-button">Search <span
-                    class="glyphicon glyphicon-search search-icon"></span></button>
-              </div>
-              <div class="search-choice find-option-content">
-                <input type="radio" name="search-choice-option" id="domestic" value="Domestic" /><label
-                  class="domestic-label" for="domestic">Domestic</label>
-                <input type="radio" name="search-choice-option" id="commercial" value="Commercial" /><label
-                  for="commercial">Commercial</label>
-              </div>
-            </div>
-          </div>
-         
-        </div>
-        
-      </div>
-    </div>
-  </div> -->
   <!-- Building Regaulation Certificates container -->
   <!-- <div class="building-regaulation-certificates-container"> -->
   <div class="container-fluid">
@@ -157,38 +113,35 @@
     </div>
   </div>
 
-
-
-
   <!-- Help And Support container -->
   <!-- <div class="help-and-support-container"> -->
   <div class="container-fluid help-and-support-container">
     <div class="container">
       <h4 class="help-and-support">Help and support</h4>
       <!-- <div class="row help-and-support-sections"> -->
-       <!--  <div class=" container-fluid"> -->
-          <div class="col-md-4 how-to-find-right-engineer-container">
-            <div class="row"><img src="./images/magnifuying-glass.svg" alt=""></div>
-            <h5 class="h-5-how-to-find-the-righ">How to find the </br>right engineer</h5>
-            <h6 class="finding-the-right-pe">Finding the right person for the job can be tricky, let us give you a hand
-              and offer some advice.</h6>
-          </div>
-          <div class="col-md-4 how-to-find-right-engineer-container">
-            <img src="./images/home.svg" alt="">
-            <h5 class="h-5-how-to-find-the-righ gas-safety-home">Gas safety</br> in the home</h5>
-            <h6 class="finding-the-right-pe">Finding the right person for the job can be tricky, let us give you a hand
-              and offer some advice.</h6>
-          </div>
-          <div class="col-md-4 how-to-find-right-engineer-container">
-            <img src="./images/questionmark.svg" alt="">
-            <h5 class="h-5-how-to-find-the-righ">What is Gas </br>Safe Register?</h5>
-            <h6 class="finding-the-right-pe">Finding the right person for the job can be tricky, let us give you a hand
-              and offer some advice.</h6>
-          </div>
-          <div class="cta-keyline-default-cta-standa col-md-12">
-            <button type="button" class="btn btn-default cta-text-visit">Visit help and support</button>
-          </div>
-        <!-- </div> -->
+      <!--  <div class=" container-fluid"> -->
+      <div class="col-md-4 how-to-find-right-engineer-container">
+        <div class="row"><img src="./images/magnifuying-glass.svg" alt=""></div>
+        <h5 class="h-5-how-to-find-the-righ">How to find the </br>right engineer</h5>
+        <h6 class="finding-the-right-pe">Finding the right person for the job can be tricky, let us give you a hand
+          and offer some advice.</h6>
+      </div>
+      <div class="col-md-4 how-to-find-right-engineer-container">
+        <img src="./images/home.svg" alt="">
+        <h5 class="h-5-how-to-find-the-righ gas-safety-home">Gas safety</br> in the home</h5>
+        <h6 class="finding-the-right-pe">Finding the right person for the job can be tricky, let us give you a hand
+          and offer some advice.</h6>
+      </div>
+      <div class="col-md-4 how-to-find-right-engineer-container">
+        <img src="./images/questionmark.svg" alt="">
+        <h5 class="h-5-how-to-find-the-righ">What is Gas </br>Safe Register?</h5>
+        <h6 class="finding-the-right-pe">Finding the right person for the job can be tricky, let us give you a hand
+          and offer some advice.</h6>
+      </div>
+      <div class="cta-keyline-default-cta-standa col-md-12">
+        <button type="button" class="btn btn-default cta-text-visit">Visit help and support</button>
+      </div>
+      <!-- </div> -->
       <!-- </div> -->
     </div>
   </div>
